@@ -1,0 +1,98 @@
+.responsive-wordpress-pic{
+	left: 5%;
+    position: relative;
+    top: 2em;
+    width: 90%;
+}
+
+
+.extra{
+    height: 10em;
+
+}
+
+.arrow_box { position: relative; 
+	background: #66C5BF; 
+	border: 4px solid #66C5BF;
+	height: 3em;
+ } 
+.arrow_box:after, 
+.arrow_box:before { bottom: 100%; 
+	left: 71%; 
+	border: solid transparent; 
+	content: " "; 
+	height: 0; width: 0; 
+	position: absolute; 
+	pointer-events: none; } 
+.arrow_box:before { 
+	border-bottom-color: #66C5BF; 
+	border-width: 21px; 
+	margin-left: -21px; }
+/*..........................................................*/
+
+#showcase-hero { 
+  background: url(../img)
+    no-repeat fixed 50% -49% rgba(0, 0, 0, 0);
+    background-size: cover;
+    height: 695px;
+    width: 100%;
+}
+
+/*Custom Font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+/*Basic Reset*/
+* {margin: 0; padding: 0;}
+
+#showcase-hero {
+    /*Removing scrollers*/
+    overflow: hidden;
+    /*A high perspective to give the UL an isometric look*/
+    perspective: 3000;
+    background: #333;
+
+}
+
+.page-title {
+    color: white;
+    font: 45px 'Open Sans';
+    width: 500px;
+    position: relative;
+    top:1em;
+}
+.subtitle-res {
+    color: black;
+    font: 18px 'Open Sans';
+    width: 500px;
+    position: relative;
+    left: 13%;
+    text-align: justify;
+    z-index: 1000;
+    margin-top: 2em;
+}
+.subtitle-res strong {
+    font: bold 20px "Open Sans";
+    color:black;
+} 
+strong{font: bold 20px "Open Sans";}
+
+/*...................................................*/
+
+
+.live{
+    color: #fff !important;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid #66C5BF;
+    left: 82%;
+    padding: 8px 21px;
+    background-color: #66C5BF;
+}
+.title-live{
+    color: #595959;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    top:11em;
+    left: 16%;
+}

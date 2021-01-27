@@ -1,0 +1,380 @@
+
+
+/*
+                                                                                                
+  ####   ####   ####     #####  ###### #####   ####  #####  ######  ####  ##### # #    # ###### 
+ #    # #      #         #    # #      #    # #      #    # #      #    #   #   # #    # #      
+ #       ####   ####     #    # #####  #    #  ####  #    # #####  #        #   # #    # #####  
+ #           #      #    #####  #      #####       # #####  #      #        #   # #    # #      
+ #    # #    # #    #    #      #      #   #  #    # #      #      #    #   #   #  #  #  #      
+  ####   ####   ####     #      ###### #    #  ####  #      ######  ####    #   #   ##   ###### 
+                                                                                                
+*/
+
+
+
+/* ------------------------------------------
+showcase-hero
+--------------------------------------------- */
+
+
+#showcase-hero { 
+  background: url(../img)
+    no-repeat fixed 50% -49% rgba(0, 0, 0, 0);
+    background-size: cover;
+    height: 689px;
+    width: 100%;
+}
+
+/* ----------End showcase-hero ------------------ */
+
+
+
+/*Custom Font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+/*Basic Reset*/
+* {margin: 0; padding: 0;}
+
+#showcase-hero {
+    /*Removing scrollers*/
+    overflow: hidden;
+    /*A high perspective to give the UL an isometric look*/
+    perspective: 3000;
+    background: #333;
+
+}
+
+.page-title {
+    color: white;
+    font: 2.813em 'Open Sans';
+    position: relative;
+    top:1.5em;
+}
+.subtitle {
+    color: white;
+    font: 18px "Open Sans";
+    left: 57%;
+    position: relative;
+    text-align: justify;
+    top: 22em;
+    width: 500px;
+    opacity: 1;
+}
+.subtitle strong {
+    color: white;
+    font: bold 20px "Open Sans";
+} 
+strong{font: bold 20px "Open Sans";}
+.grid1 {
+    position: absolute; top: 7em; left: 0;
+    /*Width = (225 + 20 + 20) * 4 = 1060*/
+    width: 1100px;
+    /*3D Transform*/
+    transform: rotateX(60deg) rotateZ(-45deg);
+    /*Preserve 3D style for children*/
+    transform-style: preserve-3d;
+}
+.grid1 li {
+    height: 400px; width: 225px;
+    float: left; margin: 20px;
+    list-style-type: none;
+    /*Hide the lighting gradient from the front face*/
+    background-size: 0, cover;
+    /*Preserve 3D style for children(pseudo elements)*/
+    transform-style: preserve-3d;
+}
+/*Left and Bottom Sides*/
+.grid1 li:before, .grid1 li:after {
+    content: '';
+    position: absolute;
+    /*100% height and width*/
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    background-size: cover;
+}
+/*Left Side*/
+.grid1 li:before {
+    transform-origin: left center;
+    transform: rotateY(90deg);
+    /*Reducing the width of the left side for a flat feel*/
+    width: 5px;
+}
+/*Bottom Side*/
+.grid1 li:after {
+    transform-origin: bottom center;
+    transform: rotateX(90deg);
+    /*Reducing the height*/
+    height: 5px; top: auto; bottom: 0;
+    /*Background fix - start the background from the bottom*/
+    background-position: bottom center;
+}
+/*Shadow time - sadly all pseudo elements are used so we will have to add an HTML element in each LI*/
+.s {
+    position: absolute;
+    /*30px smaller from each side*/
+    top: 30px; left: 30px; right: 30px; bottom: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+    /*Pushing down the shadow to give an elevated feel*/
+    transform: translateZ(-50px);
+}
+
+/*We will add a light gradient to the sides to give some lighting effect*/
+.one {
+    background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+        url("../img/Rre-design5-03.png");
+}
+.two {
+    background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+        url("../img/Rre-design5-04.png");
+}
+.three {
+    background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+        url("../img/Rre-design5-05.png");
+}
+.four {
+    background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+        url("../img/Rre-design5-06.png");
+}
+
+
+
+
+
+
+
+.model-iphone{
+    position: relative;
+    width: 70%;
+    left: 29%;
+    margin: 3em 0;
+}
+
+.title-showcase{
+    position: relative;
+    top:6em;   
+    line-height: 150%;
+    margin-left: 4%;
+}
+
+
+.divider {
+    border-top: 1px solid #e2e2e2;
+}
+
+.model-logo{
+    left: 47%;
+    position: relative;
+    top: 12.5em;
+    margin-bottom: 21em;
+}
+.clum{
+    margin: 4em 0;
+}
+.description{
+	margin-left: 4%;
+    position: relative;
+}
+.description-logo{
+    top: 6em;
+}
+.description-idea{
+    top: 15em;
+}
+.title-description{
+    position: relative;
+    margin-left: 4%;
+}
+
+
+.showcase-description{
+    position: relative;
+    text-align: justify;
+    width: 100%;
+    margin-left: 4%;
+}
+.model-idea{
+    position: relative;
+    top:2em;
+    margin: 6em 0;
+}
+.title-persona{
+    position: relative;
+    display: inline-block;
+    top:-1.7em;
+}
+.model-persona{
+    display: inline-block;
+    position: relative;
+    top:-2.2em;
+}
+.persona-description{
+    width: 100%;
+	position: relative;
+	top:-3.6em;
+}
+
+.description-scenario{
+    top:0;
+}
+
+.model-scenario{
+    left: 25%;
+    position: relative;
+    top: 3em;
+    width: 56%;
+}
+
+
+.sitmap{
+    top:3em;
+    height: 40em;
+} 
+
+.sitemap-pic{
+    margin-left: 11%;
+}
+
+
+.wrap-iphone{
+    width: 100%;
+    margin:6%;
+    height: 28em;
+}
+.c5{
+    padding-right: 0;
+}
+.title-proto{
+    margin: 1em 0;
+}
+.live{
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid #03ADEF;
+    left: 61%;
+    padding: 8px 21px;
+    background-color: #03ADEF;
+    top: 14em;
+}
+.title-live{
+    color: #595959;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    top:11em;
+    left: 16%;
+}
+
+
+p{
+    color: #595959;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top:4em; 
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #595959;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-weight: 300;
+    font-size:2.5em;
+}
+
+
+
+
+
+
+.responsive-pic{
+    width: 75%;
+    position: relative;
+    top: 11em;
+}
+
+.extra{
+    height: 10em;
+
+}
+
+.arrow_box { position: relative; 
+	background: #66C5BF; 
+	border: 4px solid #66C5BF;
+	height: 3em;
+ } 
+.arrow_box:after, 
+.arrow_box:before { bottom: 100%; 
+	left: 71%; 
+	border: solid transparent; 
+	content: " "; 
+	height: 0; width: 0; 
+	position: absolute; 
+	pointer-events: none; } 
+.arrow_box:before { 
+	border-bottom-color: #66C5BF; 
+	border-width: 21px; 
+	margin-left: -21px; }
+
+
+.work-menu{
+	position: relative;
+    top: -1em;
+    color: white;
+    left: -7.5%;
+}
+.work:hover{
+	
+}
+/*.................Media query...................*/
+@media only screen and (max-width: 321px){
+.page-title{font-size: 1.6em;}
+.subtitle{width: 100%;left:0%;}
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12{padding-left: 0;
+padding-right: 0;}
+.model-iphone{left: 0; margin: 0;width: 100%;}
+.title-showcase{top:0; margin-left: 9%;}
+.model-logo{left: 11%; top:2em;margin-bottom:0;}
+.title-description{margin-left: -1%;}
+.showcase-description{margin-left: 0;}
+p{margin-top: 2em;}
+.description{margin-left:0;}
+.description-logo{top:3em;}
+.model-idea{top:3em; margin: 0;margin-bottom: 3em;}
+.description-idea{top:0;}
+.description-scenario{top:-9em;}
+.model-scenario{left: 0;width: 100%}
+.sitemap-pic{margin-left: 0;}
+.title-wireframe{margin-bottom: 1em;}
+.wrap-iphone{margin: 0;}
+.title-live{top:0;left: 3%;}
+.live{top:0.5em;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

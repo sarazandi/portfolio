@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* font-face styles */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../jj1_day_01_site_complete/fonts/icomoon.eot');
+	src:url('../../jj1_day_01_site_complete/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+url('../../jj1_day_01_site_complete/fonts/icomoon.svg#icomoon') format('svg'),
+url('../../jj1_day_01_site_complete/fonts/icomoon.woff') format('woff'),
+url('../../jj1_day_01_site_complete/fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* end font-face styles */
+
+/* typography styles */
+
+h1, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 2.25em;	
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 30px 0 35px;		
+}
+
+h3 {
+	font-size: 1.25;
+	margin: 20px 0 25px;
+	line-height: 1.3;	
+}
+
+article h2 {
+	margin: 35px 0 20px;	
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	padding-bottom: 10px;
+	padding-left: 50px;	
+}
+
+ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	padding-bottom: 10px;
+	padding-left: 50px;	
+}
+
+li {
+	margin-bottom: 8px;	
+}
+
+p {
+	margin-bottom: 15px;	
+}
+
+p, li, a, figcaption {
+	font-family: "Courier New", Courier, monospace;
+	line-height: 1.3;
+}
+
+.hr_top {
+	margin: 30px 0 0;	
+}
+
+.hr_top + p,
+.hr_top + script + p {
+	margin: 15px 0;	
+}
+
+.f_30 .hr_top {
+	margin-bottom: 30px;	
+}
+
+.hr_bottom {
+	margin: 0 0 30px;	
+}
+
+.f_30 .hr_bottom {
+	margin-top: 10px;	
+}
+
+.f_31 .box_20 p, 
+.f_31 .box_21 p, 
+.f_31 .box_22 p {
+	position: absolute;
+	left: 30px;
+	bottom: 20px;	
+}
+
+figure + .clear + p {
+	margin-top: 30px;	
+}
+
+figcaption {
+	font-style: italic;	
+}
+
+/* icon font styles */
+
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+em {
+	font-style: italic;	
+}
+
+strong {
+	font-weight: bold;	
+}
+
+
+/* end typography styles */
+

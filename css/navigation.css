@@ -1,0 +1,416 @@
+
+
+/*
+ #    #    ##    #    #  #   ####     ##    #####  #   ####   #    # 
+ ##   #   #  #   #    #  #  #    #   #  #     #    #  #    #  ##   # 
+ # #  #  #    #  #    #  #  #       #    #    #    #  #    #  # #  # 
+ #  # #  ######  #    #  #  #  ###  ######    #    #  #    #  #  # # 
+ #   ##  #    #   #  #   #  #    #  #    #    #    #  #    #  #   ## 
+ #    #  #    #    ##    #   ####   #    #    #    #   ####   #    #  
+*/
+.head-first{
+  height: 5em;
+}
+.fixed-nav{
+    position: 
+}
+.contain-nav{
+
+}
+.first{
+
+}
+.head-menu{
+  position: relative;
+}
+.head-menu, .all-menu{
+  margin-bottom:0;
+}
+.logo{
+    height: 4em;
+    position: absolute;
+    top:0.5em;
+}
+
+#hello{
+    color: black;
+    font-family: open sans;
+    left: 25.6%;
+    position: absolute;
+    top: 2.2em;
+    z-index: 500;
+}
+
+
+.type-wrap-hello{
+    
+}
+/* code for animated blinking cursor */
+
+.typed-cursor{
+            color: white;
+            opacity: 0;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:0; }
+            50% { opacity:0; }
+            100% { opacity:0; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:0; }
+            50% { opacity:0; }
+            100% { opacity:0; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:0; }
+            50% { opacity:0; }
+            100% { opacity:0; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:0; }
+            50% { opacity:0; }
+            100% { opacity:0; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:0; }
+            50% { opacity:0; }
+            100% { opacity:0; }
+        }
+/*social media........................*/
+
+.socialmedia{
+  
+    top: 0.8em;
+    position: relative;
+
+}
+.social img{
+   height: 28px;
+}
+
+/*end social media........................*/
+
+#nav {
+    background: none repeat scroll 0 0 #fff;
+    font-size: 1.1em;
+    font-weight: normal;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+}
+
+.all-menu{
+  position: relative;
+  top:1em;
+}
+
+#nav .menu {
+    padding: 0;
+    left: 10%;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#nav .first-level-li {
+    display: inline-block;
+    padding: 0.5em;
+}
+#nav a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/*/////////////new Nav////////////////*/
+#main-menu{
+    z-index: 100;
+}
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+.first-level-li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+/*Style for menu links*/
+.first-level-li a {
+    color: #222222;
+    display: block;
+    height: 3em;
+    line-height: 50px;
+    min-width: 113px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Hover state for top level links*/
+.first-level-li:hover a {
+    background: #02B9AA;
+}
+
+/*Style for dropdown links*/
+.first-level-li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.first-level-li:hover ul a:hover {
+    background: #02B9AA;
+    color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+.first-level-li ul {
+    display: none;  
+}
+
+/*Make dropdown links vertical*/
+.first-level-li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+.first-level-li ul li a {
+    width: auto;
+    min-width: 113px;
+    padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #08B8A9;
+    text-align: center;
+    padding: 12px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ .menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+@media only screen and (max-width: 1290px){
+    .row{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 960px){
+    .row{
+        width: 95%;
+    }
+    #hello{
+        left: 34.5%
+    }
+    .socialmedia {
+      display:none ;
+    }
+    .all-menu{
+        right: 2%;
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+
+ .row{
+        width: 95%;
+    }
+    #hello{
+        left: 32%;
+        font-size: 0.9em;
+        top:2.6em;
+    }
+    #nav .menu{
+        left:5%;
+    }
+    .first-level-li a{
+        min-width: 100px;
+        font-size: 0.9em;
+    }
+    .socialmedia{
+        left: 5%;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (max-width: 768px) {
+    .all-menu{
+        font-size: 0.8em;
+    }
+    .first-level-li a{
+        min-width:90px;
+    }
+    #hello{
+        left: 10%;
+        font-size: 0.8em;
+        top: 3em;
+    }
+    #nav .menu{
+        left: 7%;
+        top: -1em;
+        float: right;
+    }
+    
+}
+@media only screen and (max-width: 640px){
+ .all-menu{
+        font-size: 0.7em;
+    }
+    #nav .first-level-li{
+        padding: 0;
+    }
+     .logo{
+        height: 3.5em;
+    }
+
+    #hello{
+        font-size: 0.7em;
+    }
+
+}
+
+/*iPhone 5 landscape · width: 568px*/
+@media only screen and (max-width: 570px){
+        /*Make dropdown links appear inline*/
+     .c9 ul {
+        position: static;
+        display: none;
+
+    }
+       .c9{
+      margin-bottom: 0;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+      display: block;
+        left: 84%;
+        position: relative;
+        width: 86px;
+      top:-2em;
+    }
+     #hello{
+        left: 14.5%;
+        top: 3em;
+    }
+      .socialmedia {
+      display: none;
+    }
+ 
+    .row{
+     width: 90%;
+    }
+    .logo{
+      margin-left: 3%;
+      top:0.7em;
+    }
+    .all-menu{
+        font-size: 0.9em;
+        right: 0;
+    }
+    #nav .menu{left:-4%;}
+    .head-first{width: 100%;}
+    .first-level-li ul li a{
+        padding: 0;
+    }
+    .first-level-li a{
+
+    }
+
+}
+
+@media only screen and (max-width: 415px){
+
+    .show-menu {
+        left: 81%;
+    }
+    .logo{
+        height: 3.5em;
+        top:0.7em;
+    }
+     #hello{
+        left: 18.5%;
+        top: 3em;
+    }
+    #nav .menu{
+        left:4%;
+    }
+    .all-menu{
+        font-size: 0.9em;
+    }
+}
+
+/*iPhone 5 portrait · width: 320px*/
+
+@media only screen and (max-width: 322px) {
+    .show-menu {
+        left: 66%;
+    }
+    .logo{
+        height: 3.5em;
+        top:0.7em;
+    }
+     #hello{
+        left: 23%;
+    }
+    #nav .menu{
+        left: 0;
+    }
+    .all-menu{
+        right: 0;
+    }
+
+}
+
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ .menu{
+    display: block;
+}
+
+

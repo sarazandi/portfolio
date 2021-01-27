@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bank Account Application</title>
+<link rel="stylesheet" type="text/css" href="styles/wd3_a_02_styles.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body class="f_09">
+<div class="wrapper">
+  <div class="box_main">
+    <header>
+      <h1>Bank Account Application</h1>
+    </header>
+    <section>
+      <div class="form_container">
+        <h2>Transaction Entry</h2>
+        <form class="form_account_entry">
+          <label for="select_account">Select Account: </label>
+          <select id="select_account">
+            <option>Chequing</option>
+            <option>Savings</option>
+          </select>
+          <br />
+          <br />
+          <label for="select_action">Action: </label>
+          <select id="select_action">
+          <option>Deposit</option>
+          <option>Withdrawal</option>
+          </select>
+          <br />
+          <br />
+          <label for="amount">Amount: </label>
+          <input id="amount" type="text">
+          <br />
+          <br />
+          <input type="submit" value="Submit">
+        </form>
+      </div><!-- end form_container -->
+      <hr />
+      <h2 class="balance_heading">Balance Chequing</h2>
+      <p id="out_balance" class="out_balance">$0.00</p>
+    </section>
+  </div><!-- end box_main -->
+</div><!-- end wrapper -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="scripts/bank_account.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
